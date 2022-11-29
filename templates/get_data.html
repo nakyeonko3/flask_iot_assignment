@@ -1,0 +1,13 @@
+<meta http-equiv="refresh" content="1" />
+<html>
+  <h1 align="center">Home status check</h1>
+  <table width="200" height="50 align=" center>
+    <tr>
+      <th>Potentiometer Status</th>
+      {% if potentialData > 200 %}
+      <td bgcolor="red" align="center">{% else %}</td>
+
+      <td bgcolor="blue" align="center">{% endif %} {{potentialData}}</td>
+    </tr>
+  </table>
+</html>
